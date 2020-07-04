@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section>
+        <div>
+        <img src="https://images.emojiterra.com/google/android-pie/512px/1f171.png" alt="B">
+        <header>
+            <h1>Checkout form</h1>
+            <p>Below is an example form built entirely with Bootstrap's form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
+        </header>
+    </div>
+    </section>
+<main>
+    <form class="form-section">
+        <header>
+            <h2>Billing Address</h2>
+        </header>
+        <div class="billing-address">                    
+            <div class="name">
+                <div>
+                    <p>First name</p>
+                    <input type="text">
+                </div>
+                <div>
+                    <p>Last name</p>
+                    <input type="text">
+                </div>
+            </div>
+                      
+            <div class="username">
+                <p>Username</p>
+                <div>
+                    <button>@</button>
+                    <input type="text" placeholder="Username">
+                </div>
+                
+            </div>
+
+            <div class="email">
+                <p>Email (Optional)</p>
+                <input type="text" placeholder="you@example.com">
+            </div>
+
+            <div class="address">
+                <p>Address</p>
+                <input type="text" placeholder="1234 Main St">
+            </div>
+
+            <div class="address">
+                <p>Address 2 (Optional)</p>
+                <input type="text" placeholder="Apartment or suite">
+            </div>
+
+            <div class="select">
+                <div class="country">
+                    <p>Country</p>
+                    <select name="country" id="country">
+                        <option value="0">Choose...</option>
+                    </select>
+                </div>
+                <div class="state">
+                    <p>State</p>
+                    <select name="state" id="state">
+                        <option value="0">Choose...</option>
+                    </select>
+                </div>
+                <div class="zip">
+                    <p>Zip</p>
+                    <input type="text">
+                </div>
+            </div>
+                
+            <hr>
+                <div class="checkboxes">
+                    <div>
+                        <input type="checkbox" id="same">
+                        <label for="same">Shipping address is the same as my billing address</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="save">
+                        <label for="save">Save this information for next time</label>
+                    </div>
+                </div>
+                <hr>
+                
+                <h2>Payment</h2>
+
+                <div class="radio">
+                    <div>
+                        <input type="radio" id="credit" name="payment" checked>
+                        <label for="credit">Credit Card</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="debit" name="payment">
+                        <label for="debit">Debit Card</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="paypal" name="payment">
+                        <label for="paypal">Paypal</label>
+                    </div>
+                </div>
+
+                <div class="payment-info">
+                    <div>
+                        <p>Name on card</p>
+                        <input type="text">
+                        <p>Full name as displayed on card</p>
+                    </div>
+                    <div>
+                        <p>Credit card number</p>
+                        <input type="number">
+                    </div>
+                </div>
+
+                <div class="payment-details">
+                    <div class="expiration">
+                        <p>Expiration</p>
+                        <input type="date">
+                    </div>
+                    <div class="cvv">
+                        <p>CVV</p>
+
+                        <input type="number">
+                    </div>
+                </div>
+        </div>
+
+        <hr>
+
+        <button class="checkout-btn">Continue to checkout</button>
+    </form>
+
+
+
+    <div class="cart">
+        <div class="cart-header">
+            <h2>Your cart</h2>
+            <p>3</p>
+        </div>
+        
+        <ul class="cart-box">
+            <li>
+                <div class="left">
+                    <p class="prod-name">Product name</p>
+                    <p class="prod-desc">Brief description</p>
+                </div>
+                <div class="right">
+                    <p>$12</p>
+                </div>
+            </li>
+            <li>
+                <div class="left">
+                    <p class="prod-name">Second product</p>
+                    <p class="prod-desc">Brief description</p>
+                </div>
+                <div class="right">
+                    <p>$8</p>
+                </div>
+            </li>
+            <li>
+                <div class="left">
+                    <p class="prod-name">Third Item</p>
+                    <p class="prod-desc">Brief description</p>
+                </div>
+                <div class="right">
+                    <p>$5</p>
+                </div>
+            </li>
+            <li class="promo">
+                <div class="left">
+                    <p class="prod-name">Promo code</p>
+                    <p class="prod-desc">EXAMPLECODE</p>
+                </div>
+                <div class="right">
+                    <p>-$5</p>
+                </div>
+            </li>
+            <li class="total">
+                <div class="left">
+                    <p>Total (USD)</p>
+                </div>
+                <div class="right">
+                    <p>20$</p>
+                </div>
+            </li>
+        </ul>
+
+        <div class="promo-input">
+            <div class="input-box">
+                <input type="text">
+                <button>Redeem</button>
+            </div>
+        </div>
+    </div>
+</main>
+    
+<footer>
+    <div>
+        <p>&copy; 2017-2018 Company Name</p>
+        <ul>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Support</a></li>
+        </ul>
+    </div>
+
+</footer>
+
+</body>
+</html>

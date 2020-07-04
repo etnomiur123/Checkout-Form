@@ -1,0 +1,324 @@
+body {
+    margin: 1rem 1rem; 
+    font-family: sans-serif;
+    background-color: rgb(245, 245, 245);
+    font-size: 15px;
+}
+
+main {
+    display: flex;
+}
+
+
+img {
+    width: 5%;
+    height: 5%;
+    min-width: 50px;
+}
+
+ul {
+    padding: 0;
+}
+
+section {
+    text-align: center;
+}
+
+p ,
+label{
+    font-weight: 550;
+}
+
+/* FORM SECTION *******************************************8*/
+form {
+    text-align: left;
+    padding: 2%;
+    flex: 2.5;
+}
+
+.form-section h2 {
+    padding: 0;
+}
+
+.billing-address p {
+    margin-bottom: 0.3rem;
+}
+
+input {
+    border:1px solid gray;
+    border-radius: 0.5rem;
+    height: 1.5rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.name ,
+.payment-info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.name div,
+.payment-info div {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+.username div{
+ display: flex;
+}
+
+.username input {
+ flex: 1;
+ border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.username button {
+    font-size: 1rem;
+    border-radius: 0.5rem 0 0 0.5rem;
+    border: 1px solid gray;
+    border-right: none;
+    width: 2.5rem;
+}
+
+.email,
+.address {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.select{
+    display: flex;
+    justify-content: space-between;
+}
+
+.country, 
+.state{
+    flex: 2;
+}
+
+ .country select,
+ .state select {
+    border:1px solid gray;
+    border-radius: 0.5rem;
+    height: 2.6rem;
+    width: 90%;
+}
+
+.zip {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.checkboxes input,
+.radio input {
+    margin: 0;
+    vertical-align: middle;
+    width: 1.1rem;
+}
+
+.payment-details {
+    display: flex;
+}
+
+.expiration {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.payment-details .expiration input {
+    width: 80%;
+}
+
+.payment-details .cvv{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.checkout-btn {
+    width: 100%;
+    height: 3rem;
+    background-color: rgb(27, 117, 252);
+    border-radius: 0.5rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+}
+
+/* CART BOX*********************/
+
+
+
+.cart-box li {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    padding: 0.2rem 1rem;
+}
+
+.cart-box {
+    border: 1px solid gray;
+    border-radius: 0.5rem;
+    background-color: white;
+}
+
+.cart-box li {
+    align-items: baseline;
+}
+
+.cart {
+    flex:1;
+    padding: 2%;
+    justify-content: center;
+}
+
+.cart-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.cart-header p {
+    background-color: rgb(90, 90, 90);
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 0.2rem 0.8rem;
+    border-radius: 40%;
+    margin: 0;
+}
+
+.prod-name {
+    font-weight: bold;
+    margin-bottom: 0.4rem;
+}
+
+.prod-desc {
+    margin-top: 0;
+    font-size: 0.8rem;
+    color: grey;
+}
+
+.promo .prod-desc {
+    color: inherit;
+}
+
+.promo-input {
+    background-color: white;
+    padding: 0.5rem;
+    border: 1px solid gray;
+    border-radius: 0.3rem;
+}
+
+.promo {
+    color: rgb(52, 129, 0);
+    background-color: rgb(245, 245, 245);
+}
+
+.promo .right p {
+    color: inherit;
+}
+
+.input-box {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+
+.input-box input {
+    flex: 2;
+    border-radius: 0.5rem 0 0 0.5rem;
+    border-right: none;
+}
+
+.input-box button {
+    font-size: 1.2rem;
+    background-color: rgb(90, 90, 90);
+    color: white;
+    padding: 0 1rem;
+    border: none;
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.cart-box .total {
+    border-bottom: none;
+}
+.total .left p{
+    font-weight: normal;
+}
+
+.right p{
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: gray;
+}
+
+
+.total .right p {
+    color: black;
+}
+
+/* FOOTER ************************************/
+
+footer{
+    text-align: center;
+}
+
+footer div {
+    margin: 4rem 0;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+footer ul a{
+    margin: 0 0.5rem;
+    text-decoration: none;
+    color:rgb(27, 117, 252); 
+}
+
+
+/* MEDIA QUERIES ****************/
+
+@media (max-width: 600px) {
+    main {
+        flex-flow: column wrap;
+    }
+
+    .cart {
+        order: 1;
+    }
+
+    .form-section {
+        order: 2;
+    }
+
+    .name,
+    .select,
+    .payment-info,
+    .payment-details{
+        display: block;
+    }
+
+    .name div,
+    .payment-info div,
+    .payment-details .expiration input,
+    .payment-details .cvv{
+        width: auto;
+    }
+
+
+    .country select,
+    .state select {
+        width: 100%;
+    }
+}
